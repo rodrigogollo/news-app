@@ -1,20 +1,7 @@
 import { useEffect, useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-
-type Article = {
-  author: string;
-  content: string;
-  description: string;
-  publishedAt: string;
-  source: {
-    id: null | string;
-    name: string;
-  };
-  title: string;
-  url: string;
-  urlToImage: string;
-};
+import { Article } from "./typings/article";
+import Home from "./containers/Home/Home";
 
 function App() {
   const [news, setNews] = useState<Article[]>([]);
@@ -25,28 +12,14 @@ function App() {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.articles[0]);
+        /* console.log(data.articles[0]); */
         setNews(data.articles);
       });
   }, []);
+
   return (
     <div className="App">
-      <h1>News APP</h1>
-      <div className="news-container">
-        {news.map((article, index) => {
-          return (
-            <div className="article">
-              <p key={index + "_title"}>{article.title}</p>;
-              <img
-                key={index + "_img"}
-                src={article.urlToImage}
-                width={300}
-                height={200}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <Home news={news} /> 
     </div>
   );
 }
