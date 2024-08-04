@@ -1,3 +1,4 @@
+import "./NewsCard.css";
 import { Article } from "../../typings/article";
 
 type NewsCardProps = {
@@ -7,7 +8,7 @@ type NewsCardProps = {
 
 const NewsCard = ({ article, index }: NewsCardProps) => {
 	return (
-		<div className="article" key={index + "_article"}>
+		<article key={index + "_article"}>
 		  <img
 			key={index + "_img"}
 			src={article.urlToImage}
@@ -15,7 +16,7 @@ const NewsCard = ({ article, index }: NewsCardProps) => {
 			height={80}
 		  />
 		  <p key={index + "_title"}>{article.title}</p>
-		</div>
+		</article>
 	)
 }
 

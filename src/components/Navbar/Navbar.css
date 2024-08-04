@@ -1,0 +1,25 @@
+nav {
+	display: flex;
+	flex-direction: row;
+	height: 3rem;
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+li {
+	margin-left: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	text-decoration: underline;
+}

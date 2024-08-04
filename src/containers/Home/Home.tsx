@@ -1,5 +1,6 @@
 import { Article } from "../../typings/article";
-import NewsCard from "../../components/NewsCard/NewsCard";
+import Header from "../../components/Header/Header";
+import "./Home.css";
 
 type HomeProps = {
   news: Article[]
@@ -7,15 +8,17 @@ type HomeProps = {
 
 const HomePage = ({ news }: HomeProps) => {
   return <>
-      <h1>News APP</h1>
+      <h1>Vozes do Gigante</h1>
+      <Header />
       <div className="news-container">
-        {news.map((article, index) => {
-          return (
-            <NewsCard article={article} index={index} /> 
-          );
-        })}
+        {
+          news.map((article, index) => {
+            return <NewsCard article={article} index={index} /> 
+          })
+        }
       </div>
   </>
 }
+
 
 export default HomePage;
