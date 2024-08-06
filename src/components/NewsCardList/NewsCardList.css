@@ -1,7 +1,10 @@
-article {
+.news-aside-card {
 	padding: 0 1rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 16rem; 
+	width: 65%;
+}
+.news-aside-card > img {
+	width: 100%;
 }

@@ -1,20 +1,37 @@
 .header {
 	width: 100%;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 1fr;
 }
 
-.header h1 {
-	font-size: 2rem;
+.tag {
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.header h3 {
+	font-size: 1.5rem;
 	text-align: left;
+	margin-top: 1rem;
 }
 
-.header img {
+.header article img {
 	border-radius: 10px;
-}
-
-.header > article > img {
 	width: 80%;
 }
 
+.header article {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	padding: 3rem;
+	background-color: gray;
+}
 
+.header > article > div { 
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	justify-content: center;
+}

@@ -12,8 +12,6 @@ const NewsCard = ({ article, index }: NewsCardProps) => {
 		  <img
 			key={index + "_img"}
 			src={article.urlToImage}
-			width={130}
-			height={80}
 		  />
 		  <p key={index + "_title"}>{article.title}</p>
 		</article>

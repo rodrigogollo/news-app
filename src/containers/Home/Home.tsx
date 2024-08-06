@@ -1,22 +1,17 @@
 import { Article } from "../../typings/article";
 import Header from "../../components/Header/Header";
 import "./Home.css";
+import NewsCardList from "../../components/NewsCardList/NewsCardList";
 
 type HomeProps = {
-  news: Article[]
+  articles: Article[]
 }
 
-const HomePage = ({ news }: HomeProps) => {
+const HomePage = ({ articles }: HomeProps) => {
   return <>
-      <h1>Vozes do Gigante</h1>
-      <Header />
-      <div className="news-container">
-        {
-          news.map((article, index) => {
-            return <NewsCard article={article} index={index} /> 
-          })
-        }
-      </div>
+    <h1>Vozes do Gigante</h1>
+    <Header />
+    <NewsCardList articles={articles} />
   </>
 }
 

@@ -1,12 +1,10 @@
-import NewsAsideCard from "../../components/NewsAsideCard/NewsAsideCard";
+import NewsCardList from "../../components/NewsCardList/NewsCardList";
 import "./NewsAside.css"
 
 const NewsAside = () => {
 	return (
 		<aside>
-			<NewsAsideCard />
-			<NewsAsideCard />
-			<NewsAsideCard />
+			<NewsCardList />
 		</aside>
 	)
 

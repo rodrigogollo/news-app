@@ -2,6 +2,7 @@ nav {
 	display: flex;
 	flex-direction: row;
 	height: 3rem;
+	justify-content: space-around;
 }
 
 ul {
@@ -13,13 +14,10 @@ ul {
 }
 
 li {
-	margin-left: 10px;
+	margin-left: 5rem;
 }
 
-a {
-	text-decoration: none;
-	color: white;
-}
+
 a:hover {
 	text-decoration: underline;
 }
