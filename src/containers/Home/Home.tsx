@@ -8,11 +8,13 @@ type HomeProps = {
 }
 
 const HomePage = ({ articles }: HomeProps) => {
-  return <>
-    <h1>Vozes do Gigante</h1>
-    <Header />
-    <NewsCardList articles={articles} />
-  </>
+  return ( 
+    <>
+      <h1>Vozes do Gigante</h1>
+      <Header />
+      <NewsCardList articles={articles} />
+    </>
+  )
 }
 
 

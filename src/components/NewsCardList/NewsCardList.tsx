@@ -8,13 +8,23 @@ type NewsCardListProps = {
 
 const NewsCardList = ({ articles }:NewsCardListProps) => {
 	return (
-		<>
+		<section className="news_list">
 		{
 			articles.map((article:Article) => (
-				<NewsCard article={article} index={Number(article.source.id)} />
+				<>
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+					<NewsCard article={article} index={Number(article.source.id)} />
+				</>
 			))
 		}
-		</>
+		</section>
 	)
 }
 

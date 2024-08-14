@@ -1,10 +1,13 @@
-.news-aside-card {
-	padding: 0 1rem;
+.news_list {
+	padding: 2rem 1rem;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 50rem;
+	background-color: black;
 	justify-content: center;
-	width: 65%;
 }
-.news-aside-card > img {
+
+.news_list > img {
 	width: 100%;
 }
