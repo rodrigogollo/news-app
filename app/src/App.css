@@ -1,0 +1,16 @@
+#root {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+}

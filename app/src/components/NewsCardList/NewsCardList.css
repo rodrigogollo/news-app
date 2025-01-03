@@ -1,0 +1,13 @@
+.news_list {
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	min-height: 50rem;
+	background-color: black;
+	justify-content: center;
+}
+
+.news_list > img {
+	width: 100%;
+}
