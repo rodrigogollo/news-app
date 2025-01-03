@@ -24,7 +24,7 @@ function App() {
       author: "teste",
       content: "enner valencia marca gol",
       description: "enner vlaencia marca gol:",
-      publishedAt: "vozes do gigante", 
+      publishedAt: "vozes do gigante",
       source: {
         id: "1c718566-f37d-4be6-ad2f-d4135016bc13",
         name: "é o source",
@@ -35,17 +35,14 @@ function App() {
     }];
     setArticles(articles);
   }, [])
-  
+
   return (
-    <>
-    <h1 className="text-3xl font-bold underline text-center text-red-800">Hello world!</h1>
-    {
-      //<Header />
-      //<Navbar />
-      //{articles ? <Home articles={articles} /> : <p>Loading...</p>} 
-      //<Footer />
-    }
-    </>
+    <div className="w-screen">
+      <Header />
+      <Navbar />
+      {articles ? <Home articles={articles} /> : <p>Loading...</p>}
+      <Footer />
+    </div>
   );
 }
 
