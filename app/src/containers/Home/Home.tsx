@@ -1,6 +1,5 @@
 import { Article } from "../../typings/article";
 import Main from "../../components/Main/Main";
-import "./Home.css";
 import NewsCardList from "../../components/NewsCardList/NewsCardList";
 import Header from "../../components/Header/Header";
 
@@ -9,7 +8,7 @@ type HomeProps = {
 }
 
 const HomePage = ({ articles }: HomeProps) => {
-  return ( 
+  return (
     <>
       <Main articles={articles} />
       <NewsCardList articles={articles} />
