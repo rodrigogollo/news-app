@@ -7,9 +7,10 @@ This project is a news website where the users are able to create new posts usin
 #### Backend
 - TypeScript
 - Express
-- PrismaORM
+- PrismaORM (https://www.prisma.io/)
 - Passport
 - Redis
+- Jest
 
 #### Frontend
 - React
@@ -17,5 +18,3 @@ This project is a news website where the users are able to create new posts usin
 - Tailwindcss
 - Zustand
 - Fontsawesome 
-
-
