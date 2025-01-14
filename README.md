@@ -18,3 +18,7 @@ This project is a news website where the users are able to create new posts usin
 - Tailwindcss
 - Zustand
 - Fontsawesome 
+
+
+### References
+- https://betterprogramming.pub/create-your-own-markdown-parser-bffb392a06db

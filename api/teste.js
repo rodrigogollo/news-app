@@ -4,6 +4,8 @@ const file = await open("./example.md");
 
 let header = {}
 let isHeader = false;
+
+let title;
 for await (const line of file.readLines()) {
   //console.log(line);
 
@@ -20,7 +22,18 @@ for await (const line of file.readLines()) {
     } else {
       header[key] = value;
     }
+  } else {
+    if (line.includes("# ")) {
+      title = line.slice(2, -1);
+    }
+
+
   }
+
+
 }
 
+title = `<h1>${title}</h1>`
+
 console.log("header", header);
+console.log("title", title);
