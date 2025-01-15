@@ -21,4 +21,4 @@ This project is a news website where the users are able to create new posts usin
 
 
 ### References
-- https://betterprogramming.pub/create-your-own-markdown-parser-bffb392a06db
+- Should create a Markdown interpreter instead of just using simple Regexes
