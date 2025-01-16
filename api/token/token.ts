@@ -1,31 +1,31 @@
-type TokenType = string
+export type TokenType = string
 
-type Token = {
+export type Token = {
   Type: TokenType;
   Literal: string;
 }
 
-const ILLEGAL = "ILLEGAL"
-const EOF = "EOF"
+export const ILLEGAL = "ILLEGAL"
+export const EOF = "EOF"
 
 // Identifiers + literals
-const IDENT = "IDENT" // add, foobar, x, y
-const INT = "INT" // 123456
+export const IDENT = "IDENT" // add, foobar, x, y
+export const INT = "INT" // 123456
 
 // Operators
-const ASSIGN = "="
-const PLUS = "+"
+export const ASSIGN = "="
+export const PLUS = "+"
+export const HEADER1 = "#"
 
 //Delimiters
-const COMMA = ","
+export const COMMA = ","
 
-const LPAREN = "("
-const RPAREN = ")"
-const LBRACE = "{"
-const RBRACE = "}"
+export const LPAREN = "("
+export const RPAREN = ")"
+export const LBRACE = "{"
+export const RBRACE = "}"
 
 // Keywords
-const FUNCTION = "FUNCTION"
-const LET = "LET"
-
+export const FUNCTION = "FUNCTION"
+export const LET = "LET"
 
