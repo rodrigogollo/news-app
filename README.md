@@ -8,6 +8,7 @@ This project is a news website where the users are able to create new posts usin
 - TypeScript
 - Express
 - PrismaORM (https://www.prisma.io/)
+- SupaBase Database (PostgreSQL)
 - Passport
 - Redis
 - Jest

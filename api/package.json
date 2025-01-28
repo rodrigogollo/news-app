@@ -15,11 +15,14 @@
   "dependencies": {
     "@prisma/client": "^6.2.0",
     "@types/node": "^22.10.2",
+    "dotenv": "^16.4.7",
     "passport-local": "^1.0.0",
+    "postgres": "^3.4.5",
     "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "@types/pg": "^8.11.11",
     "express": "^4.21.2",
     "tsx": "^4.19.2"
   }
