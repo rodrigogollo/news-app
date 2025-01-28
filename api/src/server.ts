@@ -1,16 +1,14 @@
 import express from "express";
 import reportRoutes from "./routes/reports/index.js";
 import userRoutes from "./routes/users/index.js";
-import sql from "./db.js";
-
-const teste = await sql`select NOW()`.execute();
-console.log(teste)
+import articlesRoutes from "./routes/articles/index.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use("/reports", reportRoutes);
 app.use("/users", userRoutes);
+app.use("/articles", articlesRoutes);
 
 app.get("/", (req, res) => {
   res.send("hello world");
