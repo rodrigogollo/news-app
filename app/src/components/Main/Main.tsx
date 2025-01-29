@@ -1,30 +1,13 @@
-import { useState } from "react";
-
 const Main = ({ articles }) => {
-
-  const [title, setTitle] = useState("Precisamos admitir a realidade sobre Roger e também a verdadeira briga do Inter no Brasileirão");
-  const [description, setDescription] = useState("O resultado não é bom. Não é nada bom. Tenho certeza que uma galera ficou mais aliviada com o empate e a entrega física no finalzinho, mas o pontinho somado deixa o Inter ainda a um ponto do Z4 (eu sei, tem rodadas atrasadas), mas ainda assim tem muito risco. É mega desconfortável estar ali.");
-
-  const handleClickRight = (event) => {
-    setTitle("mudou");
-  }
-
   return (
-    <main className="main">
-      <button className="arrow" onClick={handleClickRight}>{"<"}</button>
+    <main className="mb-10">
       <article>
-        <div>
-          <span className="tag"># Últimas Notícias</span>
-          <h2>{title}</h2>
-          <p>{description}</p>
-          <div>
-            <p><span>Por: </span>Redação Vozes</p>
-            <p>03 de Agostos de 2024</p>
-          </div>
+        <img className="w-100" src="src/assets/img/teste.jpg" alt="" />
+        <div className="m-2">
+          <h2 className="text-2xl font-bold">{articles[0].title}</h2>
+          <p className="text-sm my-2">{articles[0].description}</p>
         </div>
-        <img src="src/assets/img/teste.jpg" alt="" />
       </article>
-      <button className="arrow" onClick={handleClickRight}>{">"}</button>
     </main>
   )
 }

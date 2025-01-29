@@ -14,7 +14,9 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.2.0",
+    "@types/cors": "^2.8.17",
     "@types/node": "^22.10.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "passport-local": "^1.0.0",
     "postgres": "^3.4.5",

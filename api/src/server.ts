@@ -2,9 +2,12 @@ import express from "express";
 import reportRoutes from "./routes/reports/index.js";
 import userRoutes from "./routes/users/index.js";
 import articlesRoutes from "./routes/articles/index.js";
+import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(cors());
 
 app.use("/reports", reportRoutes);
 app.use("/users", userRoutes);

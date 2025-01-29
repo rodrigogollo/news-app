@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
-    <nav className="">
-      <ul className="flex flex-row justify-evenly p-4 bg-red-600 text-white ">
+    <nav className="hidden">
+      <ul className="flex flex-column justify-evenly p-4 bg-red-600 text-white ">
         <a className="hover:underline" href="#home"><li>Home</li></a>
         <a className="hover:underline" href="#footer"><li>Últimas Notícias</li></a>
         <a className="hover:underline" href="#"><li>Mercado da Bola</li></a>

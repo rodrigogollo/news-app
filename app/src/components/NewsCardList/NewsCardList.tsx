@@ -7,19 +7,11 @@ type NewsCardListProps = {
 
 const NewsCardList = ({ articles }: NewsCardListProps) => {
   return (
-    <section className="news_list">
+    <section className="m-2 overflow-hidden text-wrap">
       {
         articles.map((article: Article) => (
           <>
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
-            <NewsCard article={article} index={Number(article.source.id)} />
+            <NewsCard article={article} index={Number(article.id)} />
           </>
         ))
       }

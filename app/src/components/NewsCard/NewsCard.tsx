@@ -5,20 +5,18 @@ type NewsCardProps = {
   index: number
 }
 
-const handleTeste = (event) => {
-  console.log(event.target);
-  event.target.src = "src/assets/img/bob.jpg"
-}
-
 const NewsCard = ({ article, index }: NewsCardProps) => {
+  article.publishedAt = "7 hrs ago"
+  article.tag = "Asia"
   return (
-    <article className="news_article" key={index + "_article"}>
+    <article className="flex flex-row my-2 py-2 border-b-2 border-gray-50" key={article.id}>
       <img
+        className="w-40 h-20 mx-2"
         key={index + "_img"}
         src={article.urlToImage}
-        onClick={handleTeste}
       />
       <p key={index + "_title"}>{article.title}</p>
+      <p key={index + "_topic"}>{article.publishedAt + " | " + article.tag}</p>
     </article>
   )
 }
