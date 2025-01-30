@@ -3,6 +3,7 @@ import Main from "../../components/Main/Main";
 import NewsCardList from "../../components/NewsCardList/NewsCardList";
 import Header from "../../components/Header/Header";
 import { useQuery } from "@tanstack/react-query";
+import Live from "../../components/Live/Live";
 
 const HomePage = () => {
 
@@ -18,6 +19,7 @@ const HomePage = () => {
 
   return (
     <>
+      <Live />
       <Main articles={data} />
       <NewsCardList articles={data} />
     </>

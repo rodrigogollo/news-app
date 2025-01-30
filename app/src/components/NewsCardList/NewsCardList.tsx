@@ -10,9 +10,7 @@ const NewsCardList = ({ articles }: NewsCardListProps) => {
     <section className="m-2 overflow-hidden text-wrap">
       {
         articles.map((article: Article) => (
-          <>
-            <NewsCard article={article} index={Number(article.id)} />
-          </>
+          <NewsCard article={article} index={Number(article.id)} />
         ))
       }
     </section>
