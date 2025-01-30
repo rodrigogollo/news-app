@@ -23,3 +23,6 @@ This project is a news website where the users are able to create new posts usin
 
 ### References
 - Should create a Markdown interpreter instead of just using simple Regexes
+
+### TODO:
+[ ] - Check if youtube channel is live.
