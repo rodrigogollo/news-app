@@ -14,6 +14,8 @@ const HomePage = () => {
 
   if (error) return "An error has occurred: " + error.message;
 
+  console.log(data);
+
   return (
     <>
       <Live />

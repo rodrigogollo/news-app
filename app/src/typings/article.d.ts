@@ -1,14 +1,8 @@
 export type Article = {
-  author: string?;
-  content: string?;
-  description: string?;
-  publishedAt: string?;
-  tag: string?;
-  source: {
-    id: string?;
-    name: string?;
-  };
   title: string?;
-  url: string?;
-  urlToImage: string?;
+  author: string?;
+  tags: string?;
+  created_at: string?;
+  content: string?;
+  image: string?;
 };
