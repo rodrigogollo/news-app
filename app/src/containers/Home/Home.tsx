@@ -1,5 +1,6 @@
 import Hero from "../../components/Hero/Hero";
 import NewsCardList from "../../components/NewsCardList/NewsCardList";
+import ProgramasContainer from "../../containers/ProgramasContainer/ProgramasContainer";
 import { useQuery } from "@tanstack/react-query";
 
 const HomePage = () => {
@@ -19,6 +20,11 @@ const HomePage = () => {
     <div>
       <Hero article={data[0]} />
       <NewsCardList articles={data.slice(1)} />
+      <ProgramasContainer />
+      <h1>Vídeos</h1>
+      <h1>Nós no X</h1>
+      <div className="m-2 flex justify-center items-center">
+      </div>
     </div>
   )
 }

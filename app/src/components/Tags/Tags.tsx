@@ -1,13 +1,14 @@
 type TagsParams = {
-  tags: string[]
+  classname: string;
+  tags: string[];
 }
 
-const Tags = ({ tags }: TagsParams) => {
+const Tags = ({ tags, classname }: TagsParams) => {
   return (
-    <ul className="inline-flex flex-row">
+    <ul className="inline-flex flex-row flex-wrap">
       {
         tags.map((tag, idx) => (
-          <li className="text-xs text-white bg-red-600 rounded-xl py-1 px-3 mx-0.5 my-1 font-bold lowercase" key={tag + "_tag" + idx}>{tag}</li>
+          <li className={` ${classname}`} key={tag + "_tag" + idx}>{tag}</li>
         ))
       }
     </ul>

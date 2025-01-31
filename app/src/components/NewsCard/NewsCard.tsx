@@ -26,6 +26,7 @@ const NewsCard = ({ article, index }: NewsCardProps) => {
   const date = formatDate(article.created_at);
   const tags = article.tags?.split(",");
 
+  const classname = "text-xs text-white bg-red-600 rounded-xl py-1 px-3 mx-0.5 my-1 font-bold lowercase"
   return (
     <article className="grid grid-rows-1 grid-cols-3 gap-x-8 my-2 border-b border-gray-300 hover:cursor-pointer" key={article.id}>
       <img
@@ -35,7 +36,7 @@ const NewsCard = ({ article, index }: NewsCardProps) => {
       />
       <div className="col-span-2">
         <p className="font-bold hover:underline" key={index + "_title"}>{article.title}</p>
-        <Tags tags={tags} />
+        <Tags tags={tags} classname={classname} />
         <p className="italic text-right my-1 text-xs" key={index + "_topic"}>{date}</p>
       </div>
     </article>
