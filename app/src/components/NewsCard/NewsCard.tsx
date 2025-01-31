@@ -1,4 +1,5 @@
 import { Article } from "../../typings/article";
+import Tags from "../../components/Tags/Tags";
 
 type NewsCardProps = {
   article: Article
@@ -23,18 +24,20 @@ const formatDate = (dateStr: string) => {
 
 const NewsCard = ({ article, index }: NewsCardProps) => {
   const date = formatDate(article.created_at);
+  const tags = article.tags?.split(",");
+
   return (
-    <article className="grid grid-rows-1 grid-cols-3 gap-x-8 my-2 border-b border-gray-300" key={article.id}>
+    <article className="grid grid-rows-1 grid-cols-3 gap-x-8 my-2 border-b border-gray-300 hover:cursor-pointer" key={article.id}>
       <img
         className="w-40 h-20 mx-2 col-span-1"
         key={index + "_img"}
         src={article.image}
       />
       <div className="col-span-2">
-        <p className="font-bold" key={index + "_title"}>{article.title}</p>
-        <p className="italic text-right my-2 text-xs" key={index + "_topic"}>{date}</p>
+        <p className="font-bold hover:underline" key={index + "_title"}>{article.title}</p>
+        <Tags tags={tags} />
+        <p className="italic text-right my-1 text-xs" key={index + "_topic"}>{date}</p>
       </div>
-      {/*<Tags /> */}
     </article>
   )
 }

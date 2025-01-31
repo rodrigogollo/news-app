@@ -1,7 +1,6 @@
-import Main from "../../components/Main/Main";
+import Hero from "../../components/Hero/Hero";
 import NewsCardList from "../../components/NewsCardList/NewsCardList";
 import { useQuery } from "@tanstack/react-query";
-import Live from "../../components/Live/Live";
 
 const HomePage = () => {
   const { isPending, error, data } = useQuery({
@@ -17,11 +16,10 @@ const HomePage = () => {
   console.log(data);
 
   return (
-    <>
-      <Live />
-      <Main articles={data} />
-      <NewsCardList articles={data} />
-    </>
+    <div>
+      <Hero article={data[0]} />
+      <NewsCardList articles={data.slice(1)} />
+    </div>
   )
 }
 
