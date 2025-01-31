@@ -9,7 +9,7 @@ const Hero = ({ article }: HeroProps) => {
   const tags = article.tags?.split(",");
 
   return (
-    <main className="mb-10 hover:cursor-pointer">
+    <main className="mb-4 hover:cursor-pointer border-b-4 border-gray-400">
       <article>
         {tags && <Tags tags={tags} />}
         <img className="w-100" src={article.image || ""} alt="" />
