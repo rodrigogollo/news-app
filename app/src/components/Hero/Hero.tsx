@@ -10,7 +10,7 @@ const Hero = ({ article }: HeroProps) => {
 
   const classname = "text-md text-white bg-red-600 rounded py-1 px-3 mx-0.5 my-1 font-bold uppercase self-center w-full"
   return (
-    <main className="mb-4 hover:cursor-pointer border-b-4 border-gray-400">
+    <main className="border-b-4 border-red-600 p-2 mb-4 hover:cursor-pointer">
       <article>
         <img className="w-100" src={article.image || ""} alt="" />
         {tags && <Tags tags={tags} classname={classname} />}

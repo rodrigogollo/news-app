@@ -12,7 +12,7 @@ const NewsCardList = ({ articles }: NewsCardListProps) => {
   const articlesShort = articles.slice(2);
 
   return (
-    <section className="m-2 overflow-hidden text-wrap">
+    <section className="border-b-4 border-red-600 p-2 overflow-hidden text-wrap">
       {
         articlesBig.map((article: Article) => {
           const tags = article.tags?.split(",");
