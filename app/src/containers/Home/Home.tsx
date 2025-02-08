@@ -1,6 +1,7 @@
 import Hero from "../../components/Hero/Hero";
 import NewsCardList from "../../components/NewsCardList/NewsCardList";
 import ProgramasContainer from "../../containers/ProgramasContainer/ProgramasContainer";
+import Loading from "../../components/Loading/Loading";
 import { useQuery } from "@tanstack/react-query";
 
 const HomePage = () => {
@@ -10,7 +11,7 @@ const HomePage = () => {
       fetch("http://localhost:3000/articles").then((res) => res.json()),
   })
 
-  if (isPending) return "Loading..."
+  if (isPending) return <Loading />
 
   if (error) return "An error has occurred: " + error.message;
 
